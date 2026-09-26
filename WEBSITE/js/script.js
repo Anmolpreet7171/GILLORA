@@ -1,0 +1,1 @@
+console.log("GILLORA website loaded successfully!");

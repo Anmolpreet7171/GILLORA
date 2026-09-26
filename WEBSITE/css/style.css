@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #183b2b;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #d9e5df;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #167a4b;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #183b2b;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #d62828;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.tagline {
+    color: #d62828;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    letter-spacing: 4px;
+    color: #167a4b;
+    margin-bottom: 15px;
+}
+
+.hero-text {
+    font-size: 24px;
+    color: #183b2b;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background: #167a4b;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #d62828;
+}
+
+/* Services */
+
+.services {
+    padding: 80px 8%;
+    text-align: center;
+    background: #f4faf7;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #167a4b;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: white;
+    width: 280px;
+    padding: 35px 25px;
+    border: 1px solid #d9e5df;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    color: #d62828;
+    margin-bottom: 15px;
+}
+
+/* About */
+
+.about {
+    padding: 80px 15%;
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* Contact */
+
+.contact {
+    padding: 80px 15%;
+    text-align: center;
+    background: #f4faf7;
+}
+
+.contact p {
+    margin-bottom: 30px;
+}
+
+/* Footer */
+
+footer {
+    background: #183b2b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-text {
+        font-size: 20px;
+    }
+}
